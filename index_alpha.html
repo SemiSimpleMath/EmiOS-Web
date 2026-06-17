@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmiOS — The Assistant That Actually Works For You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">Emi<span>OS</span></div>
+    <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#dayflow">Dayflow</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#community">Community</a>
+        <a href="https://github.com/SemiSimpleMath/EmiOS-Beta" class="nav-cta">GitHub</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <div class="hero-badge">Open Source Alpha</div>
+    <h1>Not an assistant. <span class="highlight">A life partner</span> that grows with you.</h1>
+    <p class="hero-sub">
+        EmiOS gets to know you — your schedule, your habits, your preferences, your people.
+        It offloads the mental burden of everyday life so you can focus on what actually matters.
+        Manages your day, controls your home, handles the small stuff and the big stuff.
+    </p>
+    <div class="hero-buttons">
+        <a href="https://github.com/SemiSimpleMath/EmiOS-Beta" class="btn btn-primary">Get Started</a>
+        <a href="#architecture" class="btn btn-secondary">How It Works</a>
+    </div>
+</div>
+
+<section id="features">
+    <h2>What Emi Can Do</h2>
+    <p class="section-sub">Not a chatbot. A system of agents that take action on your behalf.</p>
+    <div class="features">
+        <div class="feature">
+            <div class="feature-icon">📋</div>
+            <h3>Dayflow Orchestrator</h3>
+            <p>An event-driven engine that proactively manages your day. Reminds you intelligently based on your schedule, texts you about important emails, plans and tracks tasks, and knows when to leave you alone.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">📧</div>
+            <h3>Email, Calendar & Tasks</h3>
+            <p>Gmail sync across multiple accounts. Send, reply, and manage email from chat. Google Calendar with conflict detection. "Move my 2pm to Thursday" just works.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">🏠</div>
+            <h3>Smart Home Control</h3>
+            <p>Nest thermostat, smart lights, Ring cameras. Dims the lights at bedtime, cools the house when you sleep hot, mutes notifications during meetings — autonomously.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">🧠</div>
+            <h3>Learns About You</h3>
+            <p>Builds a knowledge graph of your life — people, places, preferences, relationships. Six belief engines track your routine, health, diet, sleep, and communication patterns.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">💬</div>
+            <h3>Talk From Anywhere</h3>
+            <p>Web UI, mobile, Telegram, Slack, SMS — each with its own personality, permissions, and safety rules. Voice input and output supported.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">🎵</div>
+            <h3>DJ That Knows You</h3>
+            <p>Picks music based on time of day, your mood, sleep quality, work vs. relaxation, and your calendar. Morning focus work gets different music than Friday evening wind-down.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">🌐</div>
+            <h3>Browser Automation</h3>
+            <p>Playwright-powered real browser control. Researches the web, fills forms, captures and understands screenshots. Web search and URL summarization from chat.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">🎨</div>
+            <h3>Fully Customizable</h3>
+            <p>Name your assistant, give it a personality and backstory. Choose your LLM provider — OpenAI, Gemini, or Anthropic. Mix and match. Guided setup wizard, no config files needed.</p>
+        </div>
+    </div>
+</section>
+
+<section id="dayflow">
+    <h2>Dayflow — Your Autonomous Day Manager</h2>
+    <p class="section-sub">It doesn't wait for you to ask. It watches your schedule, your emails, your calendar, and acts when it matters.</p>
+    <div class="arch-grid">
+        <div class="arch-card">
+            <h3>Intelligent Reminders</h3>
+            <ul>
+                <li>Not static alerts — reminds you because it understands your schedule</li>
+                <li>Knows you have a meeting in 30 minutes and you're still at home</li>
+                <li>Alerts you about weather when you have an outdoor event</li>
+                <li>Reaches you on Telegram or SMS when you're away from your desk</li>
+            </ul>
+        </div>
+        <div class="arch-card">
+            <h3>Plans & Tracks Your Day</h3>
+            <ul>
+                <li>Creates plans, breaks them into tasks, tracks progress</li>
+                <li>Follows up on dispatched tasks and reports results</li>
+                <li>Manages your calendar from chat — no app switching</li>
+                <li>Suggestions appear as accept/snooze/dismiss tickets</li>
+            </ul>
+        </div>
+        <div class="arch-card">
+            <h3>Gets Smarter Over Time</h3>
+            <ul>
+                <li>Learns your quiet hours, focus patterns, and preferences</li>
+                <li>Daily insights pipeline extracts learnings and patterns</li>
+                <li>Weekly synthesis detects trends across days</li>
+                <li>Sleeps when there's nothing to do, wakes when something matters</li>
+            </ul>
+        </div>
+        <div class="arch-card">
+            <h3>Autonomous Device Control</h3>
+            <ul>
+                <li>Dims lights at bedtime, adjusts thermostat when you leave</li>
+                <li>Learns your preferences — started cooling the house at night after learning you sleep hot</li>
+                <li>Mutes notifications during meetings</li>
+                <li>AFK-aware — adjusts behavior when you step away</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="architecture">
+    <h2>Built Different</h2>
+    <p class="section-sub">Not a wrapper around an API. A general-purpose multi-agent operating system.</p>
+    <div class="arch-grid">
+        <div class="arch-card">
+            <h3>Three Layers of Orchestration</h3>
+            <ul>
+                <li><strong>Orchestrators</strong> — Event-driven engines for autonomous processes (Dayflow, and anything you build)</li>
+                <li><strong>Managers</strong> — Deterministic agent loops with state maps. Composable — managers can call other managers</li>
+                <li><strong>Agents</strong> — LLM decision units with YAML config, Jinja2 prompts, and Pydantic schemas</li>
+                <li>Agents decide. Control nodes execute. The architecture doesn't depend on the LLM being reliable.</li>
+            </ul>
+        </div>
+        <div class="arch-card">
+            <h3>Build Anything</h3>
+            <ul>
+                <li>New agent: config.yaml + prompt templates + output schema. Auto-discovered.</li>
+                <li>New tool: tool_contract.json + execute() method. Auto-discovered.</li>
+                <li>New manager: wire agents and control nodes into a state map</li>
+                <li>New room: define identity, permissions, and policy for any channel</li>
+            </ul>
+        </div>
+        <div class="arch-card">
+            <h3>Your Data, Your Machine</h3>
+            <ul>
+                <li>All data stored locally — SQLite, ChromaDB, JSON resource files</li>
+                <li>LLM calls go to your chosen provider — only the current prompt is sent</li>
+                <li>Fully extensible to local LLMs for zero cloud dependency</li>
+                <li>No telemetry — nothing phones home</li>
+            </ul>
+        </div>
+        <div class="arch-card">
+            <h3>Security & Permissions</h3>
+            <ul>
+                <li>Room-level access control — each channel has its own authority and allowed tools</li>
+                <li>Tool permission levels with risk ratings and approval gates</li>
+                <li>Scope contracts — permissions can only narrow, never expand</li>
+                <li>Per-agent tool allowlists — an email agent can't touch your smart home</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="community">
+    <h2>Come Join Us</h2>
+    <p class="section-sub">There is so much done, but so much more can be done.</p>
+    <div class="principles">
+        <div class="principle">
+            <h3>Add More Tools</h3>
+            <p>We use the Google ecosystem for calendar and email. Come add Outlook, Notion, Todoist, or whatever you use.</p>
+        </div>
+        <div class="principle">
+            <h3>Create More Rooms</h3>
+            <p>Discord, WhatsApp, Signal, Matrix — any messaging platform can become a room with its own personality.</p>
+        </div>
+        <div class="principle">
+            <h3>Expand the UI</h3>
+            <p>Build new widgets, create alternative frontends — React, terminal, Electron, native mobile. The backend is ready.</p>
+        </div>
+        <div class="principle">
+            <h3>More Smart Home</h3>
+            <p>Hue, HomeKit, Home Assistant, Zigbee — the tool system makes adding new device integrations straightforward.</p>
+        </div>
+        <div class="principle">
+            <h3>Build New Orchestrators</h3>
+            <p>The same system that powers Dayflow can power a fitness coach, finance tracker, study planner, or anything that benefits from autonomous AI.</p>
+        </div>
+        <div class="principle">
+            <h3>Local LLM Support</h3>
+            <p>Want to go fully offline? Add Ollama or any local model as a provider. The LLM interface is pluggable — bring your own backend.</p>
+        </div>
+        <div class="principle">
+            <h3>Python & Simple Stack</h3>
+            <p>Python 3.10+, Flask, SQLite, ChromaDB. No Docker required. Easy to read, modify, and extend. Full architecture docs included.</p>
+        </div>
+    </div>
+</section>
+
+<section id="personal">
+    <div class="personal-note">
+        <h2>A Personal Note</h2>
+        <p>I use EmiOS daily because it really works for me and helps me.</p>
+        <p>I have ADHD, and Emi focuses me and reminds me of all the critical things — and the small things too. It acts as my friend, therapist, and collaborator depending on what I need.</p>
+        <p>It can be brutally honest. When I was getting bad sleep, it basically told me it was cutting me off from the keyboard and I should just go to bed. When I casually mentioned that I kept waking up in the middle of the night too hot, the next evening around 9 PM it told me that for more comfortable sleep it could cool the house down a bit. I said YES, do that. It had learned that I tend to sleep too hot. From then on, it started automatically cooling the house at night.</p>
+        <p>I have big plans for Emi. So many ideas for how to build this into a truly useful part of life — not an assistant, but really someone who takes care of me and my family. Improve health, mental health, diet, finances, entertainment. The foundation is here. Come help us build the rest.</p>
+        <p class="signature">— Jukka</p>
+    </div>
+</section>
+
+<div class="cta-section">
+    <h2>Ready to meet Emi?</h2>
+    <p>EmiOS is in alpha. It's rough around the edges. But it's real, it runs, and it's yours.</p>
+    <a href="https://github.com/SemiSimpleMath/EmiOS-Beta" class="btn btn-primary">View on GitHub</a>
+</div>
+
+<footer>
+    <p>EmiOS &copy; 2026 — Open Source under MIT License</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

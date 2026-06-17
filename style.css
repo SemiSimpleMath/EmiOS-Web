@@ -301,6 +301,37 @@ h2 {
     margin-right: auto;
 }
 
+/* ── Personal note ──────────────────────────────────────────────────────────── */
+
+.personal-note {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 12px;
+    padding: 2.5rem;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.personal-note h2 {
+    text-align: left;
+    margin-bottom: 1.2rem;
+}
+
+.personal-note p {
+    color: var(--muted);
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.signature {
+    margin-top: 1.5rem;
+    color: var(--accent);
+    font-style: italic;
+    font-weight: 600;
+    text-align: right;
+}
+
 /* ── Footer ─────────────────────────────────────────────────────────────────── */
 
 footer {
@@ -317,4 +348,5 @@ footer {
     .arch-grid { grid-template-columns: 1fr; }
     nav a:not(.nav-cta) { display: none; }
     .stats { gap: 1.5rem; }
+    .personal-note { padding: 1.8rem; }
 }
